@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>Calculadora</title>
+</head>
+<body class="bg-dark text-light">
+    <header></header>
+    <main class="vw-100">
+        <form class="text-center align-items-center mx-5 p-5">
+            <h1 class="text-center col-12">Calculadora de cambio</h1>
+            <div class="form-floating my-3 mx-auto text-dark col-4">
+                <input type="number" class="form-control" id="usd" placeholder="USD">
+                <label for="usd">Monto en USD</label>
+            </div>
+            <div class="form-floating my-3 mx-auto text-dark col-4">
+                <input type="number" class="form-control" id="monitorDolar" placeholder="Bs">
+                <label for="monitorDolar">TC Monitor Dolar</label>
+            </div>
+            <div class="form-floating my-3 mx-auto text-dark col-4">
+                <input type="number" class="form-control" id="pactta" placeholder="Bs">
+                <label for="pactta">TC Pactta</label>
+            </div>
+            <div class="d-grid gap-2 col-4 mx-auto">
+                <button type="button" class="btn btn-outline-secondary btn-lg" id='calcular'>Calcular</button>
+            </div>
+        </form>
+        <div class="row gap-2 d-md-block text-center">
+            <h2 id="resultadoBs" class="col-4 mx-auto"></h2>
+            <h2 id="resultadoArs" class=" col-4 text-info mx-auto"></h2>
+        </div>
+    </main>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
